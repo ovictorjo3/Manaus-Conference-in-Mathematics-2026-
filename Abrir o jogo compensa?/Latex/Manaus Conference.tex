@@ -1,9 +1,11 @@
-	\documentclass[twoside,a4paper,10pt]{article}
+\documentclass[twoside,a4paper,10pt]{article}
 \usepackage{amssymb,amscd,amsthm,amsfonts,amsmath,latexsym,indentfirst,geometry,setspace,hyperref,graphicx,color,fancyhdr}
-
-\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-
+\makeatletter
+\renewcommand\@fnsymbol[1]{\number#1}
+\makeatother
 \onehalfspacing
 
 \geometry{left=2cm,right=2cm,top=2.5cm,bottom=2.5cm}
@@ -19,17 +21,17 @@
 \pagestyle{fancy}
 \lhead{}
 \chead{Manaus Conference in Mathematics\\
-	Manaus/AM, Brazil, September 17th to 19th, 2025}
+	Manaus/AM, Brazil, March 11th to 13th, 2026}
 \rhead{}
 
 %\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 %\let\endchangemargin=\endlist 
-\title{The title of your poster}
-\author{\text{Name of the main author (presenter)} \thanks{e-mail: \texttt{author1@aaa.bbb}} \\ Other authors\\
-	Departament \\ University \\ City, Country
-	%\and
-	%\text{Author 2}\thanks{e-mail: \texttt{zz@zzz.zzz}} \\
-	%Department \\ University ZZZ \\ City, Country
+\title{Abrir o jogo compensa? Modelagem computacional da delação premiada via Teoria dos Jogos com agentes baseados em modelos de linguagem}
+\author{\text{Joao Victor Silva de Sousa} \thanks{e-mail: \texttt{2024007388@ifam.edu.br}} \\ 
+	Departamento Acadêmico de Educação Básica e Formação de Professores \\ Instituto Federal do Amazonas \\ Manaus, Brasil
+	\and
+	\text{Tacildo de Souza Araújo} \thanks{e-mail: \texttt{tacildo.araujo@ifam.edu.br}} \\
+	Departamento Acadêmico de Educação Básica e Formação de Professores \\ Instituto Federal do Amazonas \\ Manaus, Brasil
 }
 
 %____________________________________________________
@@ -48,22 +50,30 @@
 	\vspace*{2mm}
 	
 	
-	\noindent \textbf{Keywords:} Word1; word2; word3....
+	\noindent \textbf{Palavras-chave:} Teoria dos Jogos; Dilema do Prisioneiro; Modelagem Computacional; Modelos de Linguagem; Delação Premiada.
 	
-	\section*{Abstract}
+	\section*{Resumo}
 	
 	
-	Write here the abstract of the poster.  
+	Este trabalho propõe uma modelagem computacional da delação premiada a partir da Teoria dos Jogos, interpretando esse instituto jurídico como uma instância do Dilema do Prisioneiro em jogos repetidos. A delação envolve uma decisão estratégica sob incerteza, na qual agentes avaliam riscos e benefícios associados à cooperação ou à traição. Tal estrutura é classicamente associada a jogos não cooperativos de soma não zero, amplamente discutidos na literatura de Teoria dos Jogos (Fiani, 2009; Axelrod, 1984). A questão central investigada é se agentes baseados em modelos de linguagem reproduzem, desviam ou subvertem os padrões estratégicos previstos pela Teoria dos Jogos clássica.
 	
 	
 	\medskip
 	
-	This abstract should be comprehensive enough to explain the main results to be presented, as well as the motivations behind the work and its impact on the field.
+	A partir dessa formalização, investigamos o comportamento de agentes baseados em Modelos de Linguagem (Language Models – LMs), implementados em ambiente Python e tratados como agentes heurísticos capazes de tomar decisões estratégicas sem pressupor racionalidade clássica. Diferentemente de abordagens tradicionais, não são impostas estratégias racionais pré-definidas, permitindo que as decisões emerjam a partir do contexto e do histórico das interações (Russell \& Norvig, 2013).
 	
 	\medskip
 	
 	
-	Remember that the pdf file can not exceed 2 pages.
+	A metodologia consiste na definição de uma matriz de payoff associada à delação premiada, com estratégias binárias de cooperação e traição, seguida da simulação iterativa de interações estratégicas em jogos repetidos. As simulações foram conduzidas ao longo de 200 rodadas, considerando um agente heurístico inspirado em modelos de linguagem e uma estratégia clássica do tipo Tit-for-Tat. Os resultados foram analisados por meio de métricas quantitativas como taxa de cooperação e payoff médio por interação. O equilíbrio de Nash é apresentado como referência teórica no caso estático do Dilema do Prisioneiro (Nash, 1950), sendo utilizado como contraponto analítico, e não como objetivo normativo, na interpretação dos comportamentos observados.
+	
+	\medskip
+	
+	Os experimentos indicaram a emergência de cooperação estável ao longo das interações, com o agente baseado em modelo de linguagem apresentando uma taxa de cooperação de aproximadamente 100\% das rodadas simuladas. O payoff médio observado foi de 3,0 por interação para ambos os agentes, valor compatível com o resultado de cooperação mútua no Dilema do Prisioneiro. Esses resultados evidenciam comportamentos estratégicos fora do equilíbrio clássico de Nash, especialmente em jogos repetidos, sugerindo que agentes heurísticos baseados em linguagem podem sustentar padrões cooperativos estáveis.
+	
+	\medskip
+	
+	Como limitação do modelo, destaca-se que a abordagem proposta abstrai aspectos jurídicos complexos da delação premiada, como a exigência de provas materiais para a validação das informações fornecidas. Tal simplificação é intencional e visa isolar a dimensão estratégica da decisão de cooperar ou não, sem a pretensão de reproduzir integralmente a complexidade normativa do instituto. Ainda assim, os resultados obtidos evidenciam o potencial da modelagem matemática e da simulação computacional como ferramentas da Matemática Aplicada para a análise de sistemas estratégicos associados a fenômenos sociais e jurídicos contemporâneos.
 	
 	\begin{thebibliography}{99}
 		\bibitem{DF} D. G. de Figueiredo, {\em O Princ\'ipio de Dirichlet}, Revista Matem\'atica Universit\'aria, 1985.
