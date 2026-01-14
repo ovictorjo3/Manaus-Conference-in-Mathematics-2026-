@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.5)  14 JAN 2026 13:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.5)  14 JAN 2026 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -516,7 +516,7 @@ Package rerunfilecheck Info: File `"Manaus Conference".out' has not changed.
 Here is how much of TeX's memory you used:
  12110 strings out of 475044
  187522 string characters out of 5763162
- 597727 words of memory out of 5000000
+ 598745 words of memory out of 5000000
  34940 multiletter control sequences out of 15000+600000
  573273 words of font info for 79 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
@@ -532,7 +532,7 @@ m-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb
 ></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sftt1000.pfb>
-Output written on "Manaus Conference.pdf" (2 pages, 238753 bytes).
+Output written on "Manaus Conference.pdf" (2 pages, 238840 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
