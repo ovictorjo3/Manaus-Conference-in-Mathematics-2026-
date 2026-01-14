@@ -1,0 +1,91 @@
+\documentclass[twoside,a4paper,10pt]{article}
+\usepackage{amssymb,amscd,amsthm,amsfonts,amsmath,latexsym,indentfirst,geometry,setspace,hyperref,graphicx,color,fancyhdr}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\makeatletter
+\renewcommand\@fnsymbol[1]{\number#1}
+\makeatother
+\onehalfspacing
+
+\geometry{left=2cm,right=2cm,top=2.5cm,bottom=2.5cm}
+
+%https://www.ime.usp.br/~tassio/arquivo/latex/referencias/latex-fflch.pdf
+
+%https://tex.stackexchange.com/questions/351542/different-header-and-footer-on-the-title-page-first-page
+
+%\pagestyle{fancy}
+
+%\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{Manaus Conference in Mathematics\\
+	Manaus/AM, Brazil, March 11th to 13th, 2026}
+\rhead{}
+
+%\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+%\let\endchangemargin=\endlist 
+\title{Análise Probabilística da Desigualdade Triangular em Segmentos de Comprimento Variável – Simulação Computacional e Modelagem Aplicada}
+\author{
+	Joao Victor Silva de Sousa\thanks{e-mail: \texttt{2024007388@ifam.edu.br}} \\
+	Jamily de Lima Ribeiro\thanks{e-mail: \texttt{2025004120@ifam.edu.br}} \\
+	Fabio Rivas Correia Cervino\thanks{e-mail: \texttt{fabio.rivas@ifam.edu.br}} \\
+	Departamento Acadêmico de Educação Básica e Formação de Professores \\
+	Instituto Federal do Amazonas \\ Manaus, Brasil
+}
+
+%____________________________________________________
+
+
+%===========================
+%===========================
+\begin{document}
+	
+	
+	
+	\maketitle
+	\thispagestyle{fancy}
+	
+	
+	\vspace*{2mm}
+	
+	
+	\noindent \textbf{Palavras-chave:} Probabilidade Geométrica; Desigualdade Triangular; Simulação Computacional; Modelagem Matemática Aplicada; Educação Matemática.
+	
+	\section*{Resumo}
+	
+	
+	Este trabalho investiga, por meio de simulação computacional, o clássico “problema do macarrão”, conforme enunciado por Wagner (1997), que consiste em determinar a probabilidade de três segmentos obtidos aleatoriamente a partir de um segmento unitário formarem um triângulo. A condição para sua existência é a desigualdade triangular, definida por Dolce e Pompeo (2013) como: para quaisquer três segmentos de comprimentos $a, b$ e $c$, eles formam um triângulo se, e somente se, $a+b>c, \ a+c>b, \ b+c>a$. Nosso objetivo é não apenas validar probabilisticamente essa condição, mas também integrar modelagem computacional e prática pedagógica, tornando o conceito acessível no ensino.
+	
+	
+	\medskip
+	
+	Foram realizadas $200.000$ simulações independentes usando o método de Monte Carlo, gerando dois pontos de corte uniformes em um segmento unitário. Os comprimentos resultantes foram testados quanto à satisfação da desigualdade triangular. A probabilidade experimental obtida foi $\hat{P}\approx 0,25$ confirmando o valor teórico esperado. A análise foi enriquecida com visualizações geométricas – histogramas, diagramas de dispersão e representação da região viável no espaço $\left(a,b,c \right)$ –, que ilustram de modo intuitivo como as restrições matemáticas se manifestam visualmente e revelam que os triângulos formados tendem a ser quase equiláteros.
+	
+	\medskip
+	
+	Além da investigação numérica, o estudo incluiu uma oficina prática durante a Semana da Matemática do IFAM–CMC, na qual os participantes manipularam segmentos de espaguete para vivenciar o problema concretamente. A atividade, inspirada em estudos recentes sobre o ensino da probabilidade geométrica por meio do problema do macarrão (Kayser et al., 2024) e em recursos didáticos vinculados ao problema do macarrão (WAGNER, 1997), promoveu engajamento significativo e facilitou a compreensão conceitual, evidenciando o potencial didático da abordagem. Conclui-se que a integração entre simulação computacional, visualização e experimentação prática constitui uma estratégia eficaz para o ensino de probabilidade geométrica, reforçando o papel da matemática aplicada como ponte entre teoria abstrata e prática educacional inovadora.
+	
+	
+	
+	
+	\begin{thebibliography}{99}
+		
+		\bibitem{wagner1997} WAGNER, E. \textit{Probabilidade geométrica: o problema do macarrão e um paradoxo famoso}. Revista do Professor de Matemática, v. 34, p. 6-11, 1997. Disponível em: \url{https://rpm.org.br/cdrpm/34/6.htm}. Acesso em: 14 jan. 2026.  
+		
+		\bibitem{dolce2013} DOLCE, O.; POMPEO, J. N. \textit{Fundamentos de matemática elementar 9: geometria plana}. 9. ed. São Paulo: Atual, 2013.
+		
+		\bibitem{kayser2024} KAYSER, T. A. R.; BALTAZAR, R.; SILVA, L. S. da. \textit{Explorando a Probabilidade Geométrica: o caso do Problema do Macarrão}. Revista Internacional de Pesquisa em Educação Matemática, v. 14, n. 2, p. 1–15, 2024. Disponível em: \url{https://www.sbembrasil.org.br/periodicos/index.php/ripem/article/view/3898}.
+		
+		
+		
+	\end{thebibliography}
+	
+\end{document}
+
+
+
+
+
+
