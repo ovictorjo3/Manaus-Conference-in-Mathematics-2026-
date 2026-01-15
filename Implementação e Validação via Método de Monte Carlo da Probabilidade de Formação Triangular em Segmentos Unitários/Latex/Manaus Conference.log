@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.5)  14 JAN 2026 18:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.5)  14 JAN 2026 19:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -514,28 +514,27 @@ Package rerunfilecheck Info: File `"Manaus Conference".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12110 strings out of 475044
- 187522 string characters out of 5763162
- 598745 words of memory out of 5000000
- 34940 multiletter control sequences out of 15000+600000
+ 12121 strings out of 475044
+ 187714 string characters out of 5763162
+ 598796 words of memory out of 5000000
+ 34949 multiletter control sequences out of 15000+600000
  573273 words of font info for 79 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
- 75i,11n,79p,903b,462s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,681b,462s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sftt1000.pfb>
-Output written on "Manaus Conference.pdf" (2 pages, 238840 bytes).
+/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0
+600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm17
+28.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sftt1000.pfb>
+Output written on "Manaus Conference.pdf" (2 pages, 236889 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

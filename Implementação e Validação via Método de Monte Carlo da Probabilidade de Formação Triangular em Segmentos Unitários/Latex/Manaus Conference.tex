@@ -1,0 +1,118 @@
+\documentclass[twoside,a4paper,10pt]{article}
+\usepackage{amssymb,amscd,amsthm,amsfonts,amsmath,latexsym,indentfirst,geometry,setspace,hyperref,graphicx,color,fancyhdr}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\makeatletter
+\renewcommand\@fnsymbol[1]{\number#1}
+\makeatother
+\onehalfspacing
+
+\geometry{left=2cm,right=2cm,top=2.5cm,bottom=2.5cm}
+
+%https://www.ime.usp.br/~tassio/arquivo/latex/referencias/latex-fflch.pdf
+
+%https://tex.stackexchange.com/questions/351542/different-header-and-footer-on-the-title-page-first-page
+
+%\pagestyle{fancy}
+
+%\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{Manaus Conference in Mathematics\\
+	Manaus/AM, Brazil, March 11th to 13th, 2026}
+\rhead{}
+
+%\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+%\let\endchangemargin=\endlist 
+\title{Implementação e Validação via Método de Monte Carlo da Probabilidade de Formação Triangular em Segmentos Unitários}
+\author{
+	Joao Victor Silva de Sousa\thanks{e-mail: \texttt{2024007388@ifam.edu.br}} \\
+	Jamily de Lima Ribeiro\thanks{e-mail: \texttt{2025004120@ifam.edu.br}} \\
+	Fabio Rivas Correia Cervino\thanks{e-mail: \texttt{fabio.rivas@ifam.edu.br}} \\
+	Departamento Acadêmico de Educação Básica e Formação de Professores \\
+	Instituto Federal do Amazonas \\ Manaus, Brasil
+}
+
+%____________________________________________________
+
+
+%===========================
+%===========================
+\begin{document}
+	
+	
+	
+	\maketitle
+	\thispagestyle{fancy}
+	
+	
+	\vspace*{2mm}
+	
+	
+	\noindent \textbf{Palavras-chave:} Probabilidade Geométrica; Método de Monte Carlo; Python; Desigualdade Triangular; Simulação Computacional.
+	
+	\section*{Resumo}
+	
+	
+	Este trabalho investiga o clássico problema da probabilidade geométrica popularizado por Wagner (1997) como "problema do macarrão": qual a probabilidade de três segmentos obtidos a partir de dois cortes aleatórios em um segmento unitário formarem um triângulo? A condição matemática é a satisfação simultânea da desigualdade triangular (Dolce \& Pompeo, 2013), onde cada lado deve ser menor que a soma dos outros dois. O objetivo foi desenvolver uma abordagem dupla: primeiro, uma atividade prática com estudantes; segundo, uma validação computacional rigorosa via método de Monte Carlo.
+	
+	
+	\medskip
+	
+	Realizamos duas oficinas durante a Semana da Matemática de 2025 no IFAM-Campus Manaus Centro, envolvendo aproximadamente 40 alunos, abrangendo desde o ensino médio até a graduação. Em cada sessão de 60 minutos, os participantes manipularam fisicamente segmentos de espaguete, realizando cortes aleatórios, medições com réguas e verificação da possibilidade de formação triangular. Esta abordagem, inspirada em metodologias ativas para o ensino de probabilidade geométrica (Kayser et al., 2024), permitiu aos estudantes vivenciarem concretamente as condições matemáticas da desigualdade triangular.
+	
+	\medskip
+	
+	Para complementar e validar os resultados práticos, implementamos uma simulação computacional abrangente utilizando Python 3.14. Adotamos o método de Monte Carlo (Metropolis \& Ulam, 1949) seguindo as boas práticas estabelecidas por Robert e Casella (2004). Foram realizadas $n = 200.000$ simulações independentes, garantindo reprodutibilidade através de semente fixa. Em cada simulação, geramos dois pontos de corte uniformes, calculamos os três segmentos resultantes ($a, b, c$ com $a + b + c = 1$), e verificamos a satisfação das três desigualdades triangulares.
+	
+	\medskip
+	
+	A simulação produziu uma estimativa de probabilidade de $\hat{P}=0,250245$ com intervalo de confiança de $95\%$ de $\left[0,248347;0,252143 \right]$, confirmando com alta precisão o valor teórico esperado de $P=0,25$. Além desta validação numérica, a análise computacional revelou uma propriedade geométrica significativa: os triângulos formados apresentam forte tendência à equilateridade, com coeficiente de variação médio de apenas $10,24\%$. Esta descoberta quantitativa amplia a compreensão do problema inicialmente apresentado por Wagner (1997).
+	
+	\medskip
+	
+	A abordagem prática, baseada na manipulação direta de segmentos de espaguete, permitiu aos participantes vivenciarem concretamente as condições da desigualdade triangular. A integração entre o experimento concreto e a posterior visualização dos resultados da simulação computacional possibilita uma apreciação tanto de natureza empírica da probabilidade quanto do rigor de métodos computacionais, criando uma ponte efetiva entre intuição prática e validação matemática.
+	
+	\medskip 
+	
+	Concluímos que a abordagem integrada desenvolvida, combinando experimentação prática com validação computacional via método de Monte Carlo, constitui uma estratégia pedagógica eficaz e replicável para o ensino da probabilidade geométrica. As principais contribuições são: (1) validação computacional rigorosa do resultado teórico; (2) descoberta da tendência à equilateridade dos triângulos formados; (3) desenvolvimento de um framework pedagógico que conecta experiência concreta com análise computacional; (4) produção de recursos educacionais que facilitam a replicação da metodologia em outros contextos.
+	
+	\medskip
+	
+	A metodologia desenvolvida pode ser estendida para outros problemas de probabilidade geométrica e adaptada para diferentes níveis educacionais. O sucesso da integração entre prática e computação sugere caminhos promissores para a modernização do ensino de matemática, alinhando-se com as demandas contemporâneas por abordagens que desenvolvam simultaneamente intuição prática e pensamento computacional.
+	
+	
+	
+	
+	\begin{thebibliography}{99}
+		
+		\bibitem{DolcePompeo2013}
+		DOLCE, O.; POMPEO, J. N. \textit{Fundamentos de matemática elementar 9: geometria plana}. 9. ed. São Paulo: Atual, 2013.
+		
+		\bibitem{Kayser2024}
+		KAYSER, T. A. R.; BALTAZAR, R.; SILVA, L. S. da. \textit{Explorando a Probabilidade Geométrica: o caso do Problema do Macarrão}. Revista Internacional de Pesquisa em Educação Matemática, v. 14, n. 2, p. 1–15, 2024. Disponível em: \url{https://www.sbembrasil.org.br/periodicos/index.php/ripem/article/view/3898}. Acesso em: 14 jan. 2026.
+		
+		\bibitem{MetropolisUlam1949}
+		METROPOLIS, N.; ULAM, S. \textit{The Monte Carlo Method}. Journal of the American Statistical Association, v. 44, n. 247, p. 335–341, 1949.
+	
+		
+		\bibitem{RobertCasella2004}
+		ROBERT, C. P.; CASELLA, G. \textit{Monte Carlo Statistical Methods}. 2nd ed. New York: Springer, 2004.
+		
+		
+		\bibitem{Wagner1997}
+		WAGNER, E. \textit{Probabilidade geométrica: o problema do macarrão e um paradoxo famoso}. Revista do Professor de Matemática, v. 34, p. 6-11, 1997. Disponível em: \url{https://rpm.org.br/cdrpm/34/6.htm}. Acesso em: 14 jan. 2026.
+		
+		
+		
+	\end{thebibliography}
+	
+\end{document}
+
+
+
+
+
+
